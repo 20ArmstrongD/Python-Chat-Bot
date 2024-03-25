@@ -15,6 +15,10 @@
     {
       "question": "Hi",
       "answer": "Hi"
+    },
+    {
+      "question": "How are you doing?",
+      "answer": "I'm Ok, how about you?"
     }
   ]
 }
