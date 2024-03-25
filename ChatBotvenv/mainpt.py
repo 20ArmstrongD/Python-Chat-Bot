@@ -25,7 +25,7 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
     return None
 
 def chat_bot():
-    knowledge_base: dict = load_knowledge_base('knowledge_base.json')
+    knowledge_base: dict = load_knowledge_base('knowledgebase.json')
     
     while True:
         user_input: str = input('You: ')
@@ -44,7 +44,7 @@ def chat_bot():
             
             if new_answer.lower() != 'skip':
                 knowledge_base["questions"].append({"question": user_input, "answer": new_answer})
-                save_knowledge_base('knowledge_base.json', knowledge_base) 
+                save_knowledge_base('knowledgebase.json', knowledge_base) 
                 print('Bot: Thank You! I learned a new response!')
             
     
